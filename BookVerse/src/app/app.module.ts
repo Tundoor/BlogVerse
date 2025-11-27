@@ -7,6 +7,7 @@ import { MainPageComponent } from './features/main-page/main-page.component';
 import { SingleBlogComponent } from './features/single-blog/single-blog.component';
 import { FavouriteComponent } from './features/favourite/favourite.component';
 import { NavbarComponent } from './features/navbar/navbar.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NavbarComponent } from './features/navbar/navbar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
